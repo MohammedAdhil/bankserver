@@ -1,0 +1,137 @@
+Server Creation - using express
+-------------------------------
+
+install express :-
+        -npm i express
+
+1.import express
+
+2.create an app using express
+
+3.create port number   (3000 series)
+
+4.create requests according to our project
+
+
+nodemon Server
+-------------
+
+-npm i -g nodemon
+
+User Authentication Using express
+---------------------------------
+
+JWT(json web token) token
+-------------------------
+
+jsonwebtoken       -  library           (install command : npm i jsonwebtoken)
+sign()             -  method used for generate token
+verify             -  method to verify jwt tokens
+
+Middlewares
+-----------
+
+-middlewares have the capacity to control server requests
+-its a function with 3 arguments (request,response,next)
+
+-two types
+
+        1.Application Specific Middlewares - first set cheyum
+
+        2.Router Specific Middlewares - vendath mathram set cheyum
+
+
+Solving Run-time errors in JS
+-----------------------------
+
+try catch 
+
+try{
+        error causing code
+}
+catch{
+        solution               
+}
+
+
+MONGO DB
+--------
+
+-MONGO DB is unstructured (no problem if there is any missing values)
+
+-to use mongodb mongodb server should be installed
+
+-shell commands in mongodb :-
+
+        -to see the databases :
+                ->show dbs
+
+        -to open database :
+                ->use database_name
+
+        -to view collection inside database :
+                ->show collections
+        
+        -to view datas inside collections :
+                ->db.collection_name.find()
+
+        -to view any single data inside collections :
+                ->db.collection_name.findOne({unique data to identify})
+
+        -to insert new data :
+                ->db.collection_name.insertOne({data}) 
+
+         -to view all data according to a condition :
+                ->db.collection_name.find({condition})                
+
+        -to view any single data according to a condition :
+                ->db.collection_name.findOne({condition})   
+
+        -to delete all data :
+                ->db.collection_name.delete({data})             
+
+        -to delete single data :
+                ->db.collection_name.deleteOne({data})     
+
+                -delete count =number
+                -delete count =0        if nothing deleted
+
+        -to update a data (only one data can be updated at a time) :
+                ->db.collection_name.updateOne({data to be update},{new data})
+
+                EG : db.users.updateOne({uname:'anu'},{uname:'ram'})
+
+
+[ THESE ARE ALL CRUD (CREATE READ UPDATE DELETE) OPERARTORS IN MONGO DB ]
+
+
+SERVER MONGODB INTEGRATION
+--------------------------
+
+-mongoose    -  library used to integrate db and server
+
+-to install mongoose :
+        npm i mongoose
+
+
+ steps for server mongodb integration : -
+ ----------------------------------------
+
+1.import mongoose
+
+2.state connection string via mongoose
+
+3.define a bank database Model
+
+4.export the schema to use in another files       
+
+
+ANGULAR SERVER INTEGRATION / FRONTEND-BACKEND INTEGRATION
+---------------------------------------------------------
+
+angular and node integration module - CORS  (Cross Origin Resource Sharing)
+
+ports :- 4200 - 3000
+
+to install :
+                npm i cors
